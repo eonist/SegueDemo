@@ -1,24 +1,23 @@
 import UIKit
 import With
 import Spatial
-///
-/// - Fixme: Add support for ipad rotation: Put autolayout code in: viewDidLayoutSubviews ref: https://theswiftdev.com/2017/10/31/ios-auto-layout-tutorial-programmatically/
-///
+/**
+ * - Fixme: ⚠️️ Add support for ipad rotation: Put autolayout code in: viewDidLayoutSubviews ref: https://theswiftdev.com/2017/10/31/ios-auto-layout-tutorial-programmatically/
+ */
 class View: UIView { // - Fixme: rename to PlayListView
    lazy var btn: UIButton = createButton()
-   ///
-   /// Initiate
-   ///
+   /**
+    * Initiate
+    */
    override init(frame: CGRect) {
       Swift.print("View.init")
       super.init(frame: frame)
-      backgroundColor = .gray
+      backgroundColor = .orange
       _ = btn
-//      _ = table
    }
-   ///
-   /// Boilerplate
-   ///
+   /**
+    * Boilerplate
+    */
    required init?(coder aDecoder: NSCoder) {
       fatalError("init(coder:) has not been implemented")
    }
@@ -31,7 +30,7 @@ extension View {
     * btn
     */
    func createButton() -> UIButton {
-      return with(.init()) {
+      with(.init()) {
          $0.setTitleColor(.white, for: .normal)
          $0.contentHorizontalAlignment = .left
          $0.setTitle("Button", for: .normal)
@@ -46,6 +45,15 @@ extension View {
     * touch up inside
     */
    @objc func buttonTouched(sender:UIButton!) {
-      print("It Works!!!")
+//      print("It Works!!!")
+      showOtherVC()
+   }
+   /**
+    * show detail view
+    */
+   func showOtherVC() {
+      self.window?.layer.add(UIViewController.transition(direction: .fromRight), forKey: kCATransition) // Attach right to left transition animation
+      let otherVC: OtherVC = .init()
+      self.parentViewController?.present(otherVC, animated: false)
    }
 }

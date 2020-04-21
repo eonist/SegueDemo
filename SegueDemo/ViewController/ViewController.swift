@@ -5,17 +5,7 @@ class ViewController: UIViewController {}
  * Overrides
  */
 extension ViewController {
-    override var prefersStatusBarHidden: Bool { return true }
-   ///
-   /// Set title
-   /// - Note: I guess this must be set from this method in order for it to work
-   ///
-   override func viewWillAppear(_ animated: Bool) {
-      Swift.print("viewWillAppear")
-      super.viewWillAppear(animated)
-//      let title = "Title" // AppDelegate.Titles.primary.localized
-//      navigationItem.title = title
-   }
+   override var prefersStatusBarHidden: Bool { return true }
    override func viewDidAppear(_ animated: Bool) {
       Swift.print("viewDidAppear")
       super.viewDidAppear(animated)
@@ -25,6 +15,6 @@ extension ViewController {
       Swift.print("viewDidLoad")
       super.viewDidLoad()
       self.view = View(frame: .zero)
-      view.backgroundColor = .orange
    }
 }
+

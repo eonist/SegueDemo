@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F1384461244F336D00E22898 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1384460244F336D00E22898 /* UIView+Extension.swift */; };
+		F1384463244F341900E22898 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1384462244F341900E22898 /* UIViewController+Extension.swift */; };
+		F1384466244F3AB500E22898 /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1384465244F3AB500E22898 /* ThirdVC.swift */; };
+		F1384468244F3ABF00E22898 /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1384467244F3ABF00E22898 /* ThirdView.swift */; };
 		F178F217244F08A10001FFD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F178F216244F08A10001FFD6 /* AppDelegate.swift */; };
 		F178F21B244F08A10001FFD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F178F21A244F08A10001FFD6 /* ViewController.swift */; };
 		F178F220244F08A30001FFD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F178F21F244F08A30001FFD6 /* Assets.xcassets */; };
@@ -14,9 +18,15 @@
 		F178F22B244F09510001FFD6 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F178F22A244F09510001FFD6 /* View.swift */; };
 		F178F22E244F11040001FFD6 /* Spatial in Frameworks */ = {isa = PBXBuildFile; productRef = F178F22D244F11040001FFD6 /* Spatial */; };
 		F178F231244F11220001FFD6 /* With in Frameworks */ = {isa = PBXBuildFile; productRef = F178F230244F11220001FFD6 /* With */; };
+		F178F235244F2AD50001FFD6 /* OtherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F178F234244F2AD50001FFD6 /* OtherVC.swift */; };
+		F178F237244F2B0F0001FFD6 /* OtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F178F236244F2B0F0001FFD6 /* OtherView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F1384460244F336D00E22898 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		F1384462244F341900E22898 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		F1384465244F3AB500E22898 /* ThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdVC.swift; sourceTree = "<group>"; };
+		F1384467244F3ABF00E22898 /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
 		F178F213244F08A10001FFD6 /* SegueDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SegueDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F178F216244F08A10001FFD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F178F21A244F08A10001FFD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +34,8 @@
 		F178F222244F08A30001FFD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F178F224244F08A30001FFD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F178F22A244F09510001FFD6 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		F178F234244F2AD50001FFD6 /* OtherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherVC.swift; sourceTree = "<group>"; };
+		F178F236244F2B0F0001FFD6 /* OtherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +51,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F138445F244F333000E22898 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				F1384460244F336D00E22898 /* UIView+Extension.swift */,
+				F1384462244F341900E22898 /* UIViewController+Extension.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		F1384464244F37FA00E22898 /* ThirdVC */ = {
+			isa = PBXGroup;
+			children = (
+				F1384465244F3AB500E22898 /* ThirdVC.swift */,
+				F1384467244F3ABF00E22898 /* ThirdView.swift */,
+			);
+			path = ThirdVC;
+			sourceTree = "<group>";
+		};
 		F178F20A244F08A10001FFD6 = {
 			isa = PBXGroup;
 			children = (
@@ -59,13 +89,33 @@
 			isa = PBXGroup;
 			children = (
 				F178F216244F08A10001FFD6 /* AppDelegate.swift */,
-				F178F21A244F08A10001FFD6 /* ViewController.swift */,
-				F178F22A244F09510001FFD6 /* View.swift */,
+				F138445F244F333000E22898 /* common */,
+				F178F232244F2ABA0001FFD6 /* ViewController */,
+				F178F233244F2AC60001FFD6 /* OtherVC */,
+				F1384464244F37FA00E22898 /* ThirdVC */,
 				F178F21F244F08A30001FFD6 /* Assets.xcassets */,
 				F178F221244F08A30001FFD6 /* LaunchScreen.storyboard */,
 				F178F224244F08A30001FFD6 /* Info.plist */,
 			);
 			path = SegueDemo;
+			sourceTree = "<group>";
+		};
+		F178F232244F2ABA0001FFD6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F178F21A244F08A10001FFD6 /* ViewController.swift */,
+				F178F22A244F09510001FFD6 /* View.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F178F233244F2AC60001FFD6 /* OtherVC */ = {
+			isa = PBXGroup;
+			children = (
+				F178F234244F2AD50001FFD6 /* OtherVC.swift */,
+				F178F236244F2B0F0001FFD6 /* OtherView.swift */,
+			);
+			path = OtherVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +196,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1384461244F336D00E22898 /* UIView+Extension.swift in Sources */,
+				F1384468244F3ABF00E22898 /* ThirdView.swift in Sources */,
 				F178F21B244F08A10001FFD6 /* ViewController.swift in Sources */,
 				F178F217244F08A10001FFD6 /* AppDelegate.swift in Sources */,
 				F178F22B244F09510001FFD6 /* View.swift in Sources */,
+				F1384466244F3AB500E22898 /* ThirdVC.swift in Sources */,
+				F1384463244F341900E22898 /* UIViewController+Extension.swift in Sources */,
+				F178F235244F2AD50001FFD6 /* OtherVC.swift in Sources */,
+				F178F237244F2B0F0001FFD6 /* OtherView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
