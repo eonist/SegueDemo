@@ -28,8 +28,7 @@ extension UIView {
     */
    func transition(toVC: UIViewController, dir: CATransitionSubtype = .fromRight, onComplete: @escaping OnTransitionComplete = defaultOnTransitionComplete) {
       self.window?.layer.add(UIViewController.transition(direction: dir), forKey: kCATransition) // Attach right to left transition animation
-      let vc: ThirdVC = .init()
-      self.parentViewController?.present(vc, animated: false) { onComplete() }
+      self.parentViewController?.present(toVC, animated: false) { onComplete() }
    }
    /**
     * Transition back

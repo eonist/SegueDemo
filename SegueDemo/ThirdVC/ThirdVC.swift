@@ -21,7 +21,7 @@ class ThirdVC: UIViewController {
    }
    override func viewDidAppear(_ animated: Bool) {
       super.viewDidAppear(animated)
-      view.frame = UIScreen.main.bounds.inset(by: view.safeAreaInsets) // why is this here? iphone x?
+      view.frame = UIScreen.main.bounds.inset(by: view.safeAreaInsets) // why is this here? iPhone x?
    }
    override var prefersStatusBarHidden: Bool { return true }
 }
