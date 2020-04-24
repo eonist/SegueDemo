@@ -46,7 +46,6 @@ extension ThirdView {
     * touch up inside
     */
    @objc func backButtonTouched(sender: UIButton!) {
-      self.window!.layer.add(OtherVC.transition(direction: .fromLeft), forKey: kCATransition) // attach right to left transition animation
-      self.parentViewController?.dismiss(animated: false) {}
+      self.transitionBack()
    }
 }

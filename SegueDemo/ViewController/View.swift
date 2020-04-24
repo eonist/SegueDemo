@@ -46,14 +46,6 @@ extension View {
     */
    @objc func buttonTouched(sender:UIButton!) {
 //      print("It Works!!!")
-      showOtherVC()
-   }
-   /**
-    * show detail view
-    */
-   func showOtherVC() {
-      self.window?.layer.add(UIViewController.transition(direction: .fromRight), forKey: kCATransition) // Attach right to left transition animation
-      let otherVC: OtherVC = .init()
-      self.parentViewController?.present(otherVC, animated: false)
+      transition(toVC: OtherVC())
    }
 }

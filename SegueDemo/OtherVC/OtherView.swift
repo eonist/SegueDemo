@@ -63,18 +63,11 @@ extension OtherView {
     * touch up inside
     */
    @objc func backButtonTouched(sender:UIButton!) {
-      self.window!.layer.add(OtherVC.transition(direction: .fromLeft), forKey: kCATransition) // attach right to left transition animation
-      self.parentViewController?.dismiss(animated: false) {}
+      self.transitionBack()
    }
    @objc func buttonTouched(sender:UIButton!) {
-      showThirdVC()
-   }
-   /**
-    * show detail view
-    */
-   func showThirdVC() {
-      self.window?.layer.add(UIViewController.transition(direction: .fromRight), forKey: kCATransition) // Attach right to left transition animation
-      let vc: ThirdVC = .init()
-      self.parentViewController?.present(vc, animated: false)
+      self.transition(toVC: ThirdVC())
    }
 }
+// view.transition(toVC: toVC, dir: .fromRight)
+// view.transitionBack(dir: .fromLeft)
